@@ -1,0 +1,52 @@
+{
+  "geothermals": [
+    {
+      "Id": "afb8bd76-cfc4-43cd-9be1-dc52727962fe",
+      "Name": "Rapids Sheet Metal Works, Inc.",
+      "Location": "Wisconsin Rapids, WI",
+      "PhoneNumber": "715-301-0256",
+      "Email": "rapidsheating@gmail.com",
+      "GoogleRating": 4.5
+    },
+    {
+      "Id": "2acd0471-61ba-4303-b760-c68e7a64c988",
+      "Name": "Royal Heating & Cooling, LLC",
+      "Location": "Wausau, WI",
+      "PhoneNumber": "715-298-3400",
+      "Email": "paulschrauf@yahoo.com",
+      "GoogleRating": 3.8
+    },
+    {
+      "Id": "af9663e4-3720-4eef-9350-448d076fe4fe",
+      "Name": "Badger Heating & Air Conditioning",
+      "Location": "Stevens Point, WI",
+      "PhoneNumber": "715-344-3311",
+      "Email": "badger@badgerhtg.com",
+      "GoogleRating": 4.7
+    },
+    {
+      "Id": "03d0c1b7-1cff-446d-a554-5468ca86e8da",
+      "Name": "Gilray Heating & Cooling Services",
+      "Location": "Wausau, WI",
+      "PhoneNumber": "715-355-1244",
+      "Email": "gilrayheating@gmail.com",
+      "GoogleRating": 4.3
+    },
+    {
+      "Id": "185ad83d-ce48-426f-8497-2ac6b992521a",
+      "Name": "Chets Plumbing & Heating, Inc.",
+      "Location": "Stevens Point, WI",
+      "PhoneNumber": "715-341-9530",
+      "Email": "chets@chets.net",
+      "GoogleRating": 4.5
+    },
+    {
+      "Id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "Name": "Point Heating and Cooling",
+      "Location": "Stevens Point, WI",
+      "PhoneNumber": "715-341-5555",
+      "Email": "email@email.com",
+      "GoogleRating": 5.0
+    }
+  ]
+}

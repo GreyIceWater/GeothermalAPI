@@ -1,20 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GeothermalAPI.Models
 {
-    public class Geothermal
+    [Table("installer")]
+    public class Installer
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
         public string Location { get; set; }
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
-        public double GoogleRating { get; set; }        
+        public decimal? GoogleRating { get; set; }        
     }
 
-    public class GeothermalList
+    public class InstallerList
     {
-        public List<Geothermal> geothermals;
+        public List<Installer> installers;
     }
 }

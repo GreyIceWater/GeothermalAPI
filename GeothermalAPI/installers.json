@@ -1,5 +1,5 @@
 {
-  "geothermals": [
+  "installers": [
     {
       "Id": "afb8bd76-cfc4-43cd-9be1-dc52727962fe",
       "Name": "Rapids Sheet Metal Works, Inc.",
@@ -47,6 +47,14 @@
       "PhoneNumber": "715-341-5555",
       "Email": "email@email.com",
       "GoogleRating": 5.0
+    },
+    {
+      "Id": "130a1394-b600-4838-bf6d-07ba083213cf",
+      "Name": "Joe's Geo",
+      "Location": "Central Wisconsin",
+      "PhoneNumber": "7154515555",
+      "Email": "test@email.com",
+      "GoogleRating": 4.9
     }
   ]
 }

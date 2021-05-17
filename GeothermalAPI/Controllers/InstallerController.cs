@@ -33,7 +33,7 @@ namespace GeothermalAPI.Controllers
             return installers.installers;
         }
 
-        // GET: api/<InstallerController>/installer
+        // GET: api/<InstallerController>/installers
         [HttpGet("installers")]
         public async Task<ActionResult<IEnumerable<Installer>>> GetInstallers()
         {
@@ -61,7 +61,7 @@ namespace GeothermalAPI.Controllers
 
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetInstaller), id = installer.Id);
+            return await GetInstaller(id);
         }
 
         // PUT api/<InstallerController>/5
@@ -81,9 +81,9 @@ namespace GeothermalAPI.Controllers
             updateVal.PhoneNumber = value.PhoneNumber;
             updateVal.Email = value.Email;
             updateVal.GoogleRating = value.GoogleRating;
+            updateVal.ImageURL = value.ImageURL;
 
             _context.Installers.Update(updateVal);
-
             int num = await _context.SaveChangesAsync();           
 
             return num > 0 ? true : false;
@@ -91,8 +91,19 @@ namespace GeothermalAPI.Controllers
 
         // DELETE api/<InstallerController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<bool> Delete(Guid id)
         {
+            var installer = await _context.Installers.FindAsync(id);
+
+            if (installer == null)
+            {
+                return false;
+            }
+
+            _context.Installers.Remove(installer);
+            int num = await _context.SaveChangesAsync();
+
+            return num > 0 ? true : false;
         }
     }
 }

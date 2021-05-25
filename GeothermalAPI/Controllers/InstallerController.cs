@@ -41,7 +41,7 @@ namespace GeothermalAPI.Controllers
         }
 
         // GET: api/<InstallerController>/installer/5
-        [HttpGet("installer")]
+        [HttpGet("installer/{id}")]
         public async Task<ActionResult<Installer>> GetInstaller(Guid id)
         {
             var installer = await _context.FindAsync<Installer>(id);
